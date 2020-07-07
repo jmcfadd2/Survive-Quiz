@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <title>Survive or Thrive</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>Quarantine Survive or Thrive</title>
 </head>
 
 <body>
@@ -13,7 +15,7 @@
     <div class="intro py-3 bg-white text-center">
         <div class="container">
             <h2 class="primary display-3 my-4">
-                Survive or Thrive Quiz
+                Quarantine Survive or Thrive Quiz
             </h2>
         </div>
     </div>
@@ -90,143 +92,156 @@
                 </div>
 
                 <!-- Question 3 -->
-                <div class="my-5">
-                    <p class="lead font-weight-normal">3. Did you binge more than 1 Netflix series during lockdown?</p>
-                </div>
-
-                <!-- Answer 3.1 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q3" value="4" checked>
-                    <label class="form-check-label">Yes</label>
-                </div>
-
-                <!-- Answer 3.2 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q3" value="1">
-                    <label class="form-check-label">No</label>
+                <div id="quest-3">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">3. Did you binge more than 1 Netflix series during lockdown?</p>
+                    </div>
+    
+                    <!-- Answer 3.1 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="4" id="q3Yes">
+                        <label class="form-check-label">Yes</label>
+                    </div>
+    
+                    <!-- Answer 3.2 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="1" id="q3No">
+                        <label class="form-check-label">No</label>
+                    </div>
                 </div>
 
                 <!-- Question 4 -->
-                <div class="my-5">
-                    <p class="lead font-weight-normal">4. What was your go to Netflix genre?</p>
-                </div>
+                <div class="d-none" id="quest-4">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">4. What was your go to Netflix genre?</p>
+                    </div>
 
-                <!-- Answer 4.1 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q4" value="1" checked>
-                    <label class="form-check-label">Documentaries all day. Have you heard of Ava Duvernay?</label>
-                </div>
+                    <!-- Answer 4.1 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="1" checked>
+                        <label class="form-check-label">Documentaries all day. Have you heard of Ava Duvernay?</label>
+                    </div>
 
-                <!-- Answer 4.2 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q4" value="4">
-                    <label class="form-check-label">Rom Com because why not... Don't judge me</label>
-                </div>
+                    <!-- Answer 4.2 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="4">
+                        <label class="form-check-label">Rom Com because why not... Don't judge me</label>
+                    </div>
 
-                <!-- Answer 4.3 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q4" value="3">
-                    <label class="form-check-label">Action/Thrillers because "I have a certain set of skills"</label>
-                </div>
+                    <!-- Answer 4.3 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="3">
+                        <label class="form-check-label">Action/Thrillers because "I have a certain set of
+                            skills"</label>
+                    </div>
 
-                <!-- Answer 4.4 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q4" value="2">
-                    <label class="form-check-label">Netflix Originals are always the best</label>
+                    <!-- Answer 4.4 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="2">
+                        <label class="form-check-label">Netflix Originals are always the best</label>
+                    </div>
                 </div>
 
                 <!-- Question 5 -->
-                <div class="my-5">
-                    <p class="lead font-weight-normal">5. Did you learn a skill?</p>
-                </div>
-
-                <!-- Answer 5.1 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q5" value="1" checked>
-                    <label class="form-check-label">Yes</label>
-                </div>
-
-                <!-- Answer 5.2 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q5" value="4">
-                    <label class="form-check-label">No</label>
+                <div id="quest-5">
+                    <div class="my-5" >
+                        <p class="lead font-weight-normal">5. Did you learn a skill?</p>
+                    </div>
+    
+                    <!-- Answer 5.1 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="1" id="q5Yes"  checked>
+                        <label class="form-check-label">Yes</label>
+                    </div>
+    
+                    <!-- Answer 5.2 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="4" id="q5No">
+                        <label class="form-check-label">No</label>
+                    </div>
                 </div>
 
                 <!-- Question 6 -->
-                <div class="my-5">
-                    <p class="lead font-weight-normal">6. Which closest represents your skill growth?</p>
-                </div>
-
-                <!-- Answer 6.1 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q6" value="4" checked>
-                    <label class="form-check-label">I worked on for like a day or two but it still counts</label>
-                </div>
-
-                <!-- Answer 6.2 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q6" value="3">
-                    <label class="form-check-label">I got better!</label>
-                </div>
-
-                <!-- Answer 6.3 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q6" value="1">
-                    <label class="form-check-label">Apprentice to Master</label>
-                </div>
-
-                <!-- Answer 6.4 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q6" value="2">
-                    <label class="form-check-label">Novice to Intermediate</label>
+                <div id="quest-6">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">6. Which closest represents your skill growth?</p>
+                    </div>
+    
+                    <!-- Answer 6.1 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q6" value="4" checked>
+                        <label class="form-check-label">I worked on for like a day or two but it still counts</label>
+                    </div>
+    
+                    <!-- Answer 6.2 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q6" value="3">
+                        <label class="form-check-label">I got better!</label>
+                    </div>
+    
+                    <!-- Answer 6.3 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q6" value="1">
+                        <label class="form-check-label">Apprentice to Master</label>
+                    </div>
+    
+                    <!-- Answer 6.4 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q6" value="2">
+                        <label class="form-check-label">Novice to Intermediate</label>
+                    </div>
                 </div>
 
                 <!-- Question 7 -->
-                <div class="my-5">
-                    <p class="lead font-weight-normal">7. Do you enjoy working from home?</p>
-                </div>
-
-                <!-- Answer 7.1 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q7" value="6" checked>
-                    <label class="form-check-label">No, I never thought I'd miss the office but I do</label>
-                </div>
-
-                <!-- Answer 7.2 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q7" value="0">
-                    <label class="form-check-label">Yes, can remote work be a thing forever?</label>
+                <div id="quest-7">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">7. Do you enjoy working from home?</p>
+                    </div>
+    
+                    <!-- Answer 7.1 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q7" value="6" id="q7Yes" checked>
+                        <label class="form-check-label">No, I never thought I'd miss the office but I do</label>
+                    </div>
+    
+                    <!-- Answer 7.2 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q7" value="0" id="q7No">
+                        <label class="form-check-label">Yes, can remote work be a thing forever?</label>
+                    </div>
                 </div>
                 <!-- Question 8 -->
-                <div class="my-5">
-                    <p class="lead font-weight-normal">8. What does your work-from-home setup look like?</p>
-                </div>
-
-                <!-- Answer 8.1 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q8" value="3" checked>
-                    <label class="form-check-label">I call it my home office but my kids call it the in home jungle
-                        gym</label>
-                </div>
-
-                <!-- Answer 8.2 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q8" value="4">
-                    <label class="form-check-label">It’s fine, but my desk at the office… that was an organized thing
-                        of beauty 4</label>
-                </div>
-
-                <!-- Answer 8.3 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q8" value="1">
-                    <label class="form-check-label">This is what I imagine Tony Stark’s desk looks like</label>
-                </div>
-
-                <!-- Answer 8.4 -->
-                <div class="form-check my-2 text-white-50">
-                    <input type="radio" name="q8" value="2">
-                    <label class="form-check-label">d. My laptop, my coffee and a picture to remind me who I do it
-                        for</label>
+                <div id="quest-8">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">8. What does your work-from-home setup look like?</p>
+                    </div>
+    
+                    <!-- Answer 8.1 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q8" value="3" checked>
+                        <label class="form-check-label">I call it my home office but my kids call it the in home jungle
+                            gym</label>
+                    </div>
+    
+                    <!-- Answer 8.2 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q8" value="4">
+                        <label class="form-check-label">It’s fine, but my desk at the office… that was an organized thing
+                            of beauty 4</label>
+                    </div>
+    
+                    <!-- Answer 8.3 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q8" value="1">
+                        <label class="form-check-label">This is what I imagine Tony Stark’s desk looks like</label>
+                    </div>
+    
+                    <!-- Answer 8.4 -->
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q8" value="2">
+                        <label class="form-check-label">d. My laptop, my coffee and a picture to remind me who I do it
+                            for</label>
+                    </div>
                 </div>
                 <!-- Question 9 -->
                 <div class="my-5">
@@ -326,12 +341,12 @@
                     <input type="radio" name="q11" value="0">
                     <label class="form-check-label">Do exactly what I was doing in lockdown. Stay inside</label>
                 </div>
-        
 
-    </div>
-    <div class="text-center">
-        <input type="submit" class="btn btn-light my-5">
-    </div>
+
+        </div>
+        <div class="text-center">
+            <input type="submit" class="btn btn-light my-5">
+        </div>
     </div>
     </form>
     </div>
