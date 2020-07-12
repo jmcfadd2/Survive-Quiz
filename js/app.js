@@ -11,7 +11,7 @@ const q3No = document.getElementById('q3No')
 const q5No = document.getElementById('q5No')
 const q7No = document.getElementById('q7No')
 
-// Flow control for yes now questions. Displays certain questions based on the answer of previous questions
+// Control Flow for yes/no questions. Displays certain questions based on the answer of previous questions
 
 quest3.addEventListener('change', (event) => {
 
