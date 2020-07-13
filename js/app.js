@@ -87,6 +87,6 @@ form.addEventListener('submit', e => {
 
 
     result.classList.remove('d-none')
-
+    document.querySelector('.intro p').classList.add('d-none')
 
 })

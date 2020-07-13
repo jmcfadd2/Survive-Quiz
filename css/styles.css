@@ -1,0 +1,25 @@
+
+
+.intro h2 {
+    font-family: 'Modak', cursive;
+    color: #3FADCD;
+}
+
+.intro p {
+    font-size: 20px;
+    padding: 0 300px;
+}
+
+input {
+    margin-right: 10px;
+}
+
+label {
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.quiz {
+    background-color: #cd853f;
+}
+
