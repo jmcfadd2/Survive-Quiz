@@ -79,11 +79,11 @@ form.addEventListener('submit', e => {
         document.querySelector('span').classList.add("text-orange")
     } else if (sum >= 8) {
         document.querySelector('.description').textContent = "The switch to remote work and staying home bothered you little and you thrived as a true quarantine warrior."
-        document.querySelector('span').textContent = "were/are Thriving"
+        document.querySelector('span').textContent = "Thrived"
         document.querySelector('span').classList.add("text-warning")
     } else {
         document.querySelector('.description').textContent = "Some have adapted to quarantine but you were made for it. The extra introspection and free time has allowed you to blossom into the cave flower you always knew you were."
-        document.querySelector('span').textContent = "were/are Thriving to the Max"
+        document.querySelector('span').textContent = "Thrived to the Max"
         document.querySelector('span').classList.add("text-success")
     }
 
