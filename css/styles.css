@@ -7,17 +7,31 @@
 
 .intro p {
     font-size: 20px;
-    padding: 0 300px;
+    width: 500px;
+    display: inline-flex;
+    text-align: center;
+}
+
+.result {
+    display: block;
+}
+
+.text-orange {
+    color: orangered;
 }
 
 input {
     margin-right: 10px;
+    position: relative;
 }
 
 label {
     cursor: pointer;
     color: aliceblue;
+    display: inline-flex;
+    align-items: center;
 }
+
 
 .quiz {
     background-color: #cd853f;
