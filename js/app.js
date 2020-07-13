@@ -55,30 +55,36 @@ form.addEventListener('submit', e => {
     // Converts string type value from questions into number types in order to quantify the responses
 
 
-    const userAnswers = [parseInt(form.q1.value), parseInt(form.q2.value), parseInt(form.q3.value), parseInt(form.q4.value), parseInt(form.q5.value), parseInt(form.q6.value), parseInt(form.q7.value), parseInt(form.q9.value), parseInt(form.q9.value), parseInt(form.q10.value), parseInt(form.q11.value)]
+    const userAnswers = [parseInt(form.q1.value), parseInt(form.q2.value), parseInt(form.q3.value), parseInt(form.q4.value), parseInt(form.q5.value), parseInt(form.q6.value), parseInt(form.q7.value), parseInt(form.q8.value), parseInt(form.q9.value), parseInt(form.q10.value), parseInt(form.q11.value)]
 
-    var sum = userAnswers.reduce((a, b) => a + b, 0)
+    const userAnswersNaNFiltered = userAnswers.filter(value => !Number.isNaN(value))
+
+    var sum = userAnswersNaNFiltered.reduce((a, b) => a + b, 0)
 
     result.classList.remove('d-none')
 
     // Uses the above quantification in order to determine the category of the users response
 
+    console.log("User answers:" +userAnswers)
+    console.log("User answers:" +userAnswersNaNFiltered)
 
     if (sum >= 30) {
         document.querySelector('.description').textContent = "You have struggled to see the light at the end of the tunnel and seen your productive hours dwindle but don't fret the end is near! Enjoy the coming freedom."
         document.querySelector('span').textContent = "Just Barely Survived"
+        document.querySelector('span').classList.add("text-danger")
 
-    }
-    if (sum >= 20) {
-        document.querySelector('.description').textContent = "The days were long but you did some good things. You learned a lot about yourself but didn't find your best self but hope is on the horizon. Enjoy the coming freedom."
+    } else if (sum >= 20) {
+        document.querySelector('.description').textContent = "The days were long but you did some good things. You learned a lot about yourself but didn't find your best self. Do not fret! Hope is on the horizon as the end is in sight. Enjoy the coming freedom."
         document.querySelector('span').textContent = "Survived"
-    }
-    if (sum >= 10) {
+        document.querySelector('span').classList.add("text-orange")
+    } else if (sum >= 8) {
         document.querySelector('.description').textContent = "The switch to remote work and staying home bothered you little and you thrived as a true quarantine warrior."
-        document.querySelector('span').textContent = "Surviving and Thriving"
+        document.querySelector('span').textContent = "were/are Thriving"
+        document.querySelector('span').classList.add("text-warning")
     } else {
         document.querySelector('.description').textContent = "Some have adapted to quarantine but you were made for it. The extra introspection and free time has allowed you to blossom into the cave flower you always knew you were."
-        document.querySelector('span').textContent = "Thriving to the Max"
+        document.querySelector('span').textContent = "were/are Thriving to the Max"
+        document.querySelector('span').classList.add("text-success")
     }
 
     console.log(sum)
